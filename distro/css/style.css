@@ -19,7 +19,7 @@ header {
   display: grid;
   justify-items: end;
   align-items: center;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 25% 75%;
   grid-template-rows: 1fr;
   -webkit-box-shadow: 0px 4px 3px 0px rgba(156, 156, 156, 0.1);
   -moz-box-shadow: 0px 4px 3px 0px rgba(156, 156, 156, 0.1);
@@ -30,9 +30,10 @@ a {
   text-decoration: none;
 }
 li {
+  font-size: 0.9em;
   list-style: none;
   display: inline-block;
-  margin: 0 0 0 4em;
+  margin: 0 0 0 2em;
 }
 nav#menu {
   align-items: end;
@@ -47,8 +48,8 @@ nav#menu {
   display: inline-block;
 }
 #logo {
-  width: 190px;
-  margin: 2em 0 2em 0;
+  width: 170px;
+  margin: 1.5em 0 1.5em 0;
 }
 #zamow a {
   font-weight: 900;
@@ -69,12 +70,11 @@ a:hover {
 }
 .button_kup {
   font-family: 'Lato', sans-serif;
-  letter-spacing: 0.055em;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: 1em;
   text-align: center;
-  padding: 1em 3em;
-  margin: 2em 35% 2em 35%;
+  padding: 1em 3.7em;
+  margin: 2em 10em 1em 10em;
   background: #eb4d4b;
 }
