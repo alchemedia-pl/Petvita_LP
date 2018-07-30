@@ -58,7 +58,7 @@ header {
   display: grid;
   place-items: center center;
   grid-template-columns: auto auto;
-  gird-template-rows: auto auto;
+  grid-template-rows: auto auto;
   grid-template-areas: "image_S1 text_S1" "image_S1 text_S1";
 }
 #btn_kup_teraz {
@@ -93,34 +93,42 @@ header {
   grid-area: S2;
   margin: 0 0 0 0;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto;
   background: #111 url('../images/piesek_petvita_background.png') no-repeat center center;
-  grid-template-areas: "h1_S2 h1_S2" "p_S2 p_S2" "image_S2 h2_S2" "image_S2 ikony_S2";
+  grid-template-areas: "h1_S2 h1_S2 h1_S2" "p_S2 p_S2 p_S2" "image_S2 h2_S2 h2_S2" "image_S2 ikony_S2 ikony_S2";
 }
 #image_S2 {
   margin-top: 6em;
   grid-area: image_S2;
 }
 #h1_S2 {
-  display: grid;
   grid-area: h1_S2;
 }
 #h2_S2 {
-  display: grid;
   grid-area: h2_S2;
+  margin: 2em 6em 0 0;
 }
 #p_S2 {
-  display: grid;
   grid-area: p_S2;
   margin: 0 6em 0 6em;
 }
 #ikony_S2 {
   display: grid;
+  margin: 0 6em 0 0;
   grid-area: ikony_S2;
+  place-items: start center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
 }
 .ikona_S2 {
-  display: inline;
+  display: grid;
+  justify-items: center;
+  max-width: 12em;
+  padding-bottom: 4em;
+}
+.ikona_S2 p {
+  text-align: center;
 }
 .S3 {
   grid-area: S3;
