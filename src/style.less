@@ -87,7 +87,7 @@ header {
 	grid-area: S1;
 	margin: 3em 6em 3em 6em;
 	display: grid;
-	justify-content: center;
+	place-items: center center;
 	grid-template-columns: auto auto;
 	gird-template-rows: auto auto;
 	grid-template-areas:
@@ -108,6 +108,10 @@ header {
 	border: none;
 }
 
+#btn_kup_teraz:hover {
+	opacity: .8;
+}
+
 #btn_container {
 	margin-top: 3em;
 	display: grid;
@@ -116,6 +120,7 @@ header {
 
 #image_S1 {
 	grid-area: image_S1;
+	place-items: center center;
 }
 
 #text_S1 {
@@ -126,13 +131,18 @@ header {
 
 .S2 {
 	grid-area: S2;
-	margin: 3em 0 0 0;
-	padding: 7em 0 2em 0;
+	margin: 0 0 0 0;
+	// padding: 4em 0 2em 0;
 	display: grid;
-	justify-content: start;
+	// justify-content: start;
 	grid-template-columns: auto auto;
-	gird-template-rows: auto auto;
+	grid-template-rows: auto auto auto auto;
 	background: #111 url('../images/piesek_petvita_background.png') no-repeat center center;
+	grid-template-areas: 
+	"h1_S2 h1_S2"
+	"p_S2 p_S2"
+	"image_S2 h2_S2"
+	"image_S2 ikony_S2"
 }
 
 #image_S2 {
@@ -140,9 +150,33 @@ header {
 	grid-area: image_S2;
 }
 
+#h1_S2 {
+	display:grid;
+	grid-area: h1_S2;
+}
+
+#h2_S2 {
+	display:grid;
+	grid-area: h2_S2;
+}
+
+#p_S2 {
+	display:grid;
+	grid-area: p_S2;
+	margin: 0 6em 0 6em;
+}
+#ikony_S2 {
+	display: grid;
+	grid-area: ikony_S2;
+}
+
+.ikona_S2 {
+	display: inline;
+}
+
 .S3 {
 	grid-area: S3;
-	margin: 0 0 3em 0;
+	margin: 0 0 0 0;
 	display: grid;
 	background: #fff;
 	justify-content: center;
@@ -152,17 +186,139 @@ header {
 
 .S4 {
 	grid-area: S4;
-	margin: 0 6em 0 6em;
+	margin: 0 0 0 0;
+	padding: 2em 0 2em 0;
+	display: grid;
+	background: #795548;
+	justify-content: center;
+	grid-template-columns: auto;
+	gird-template-rows: auto;
+	grid-template-areas: 
+		"h1_S4 p_S4"
+}
+
+#h1_S4 {
+	grid-area: h1_S4;
+	margin: 0 0 0 4em;
+}
+
+#p_S4 {
+	grid-area: p_S4;
+	margin: 0 6em 0 2em;
 }
 
 .S5 {
+	display: grid;
+	place-items: center center;
 	grid-area: S5;
-	margin: 0 6em 0 6em;
+	margin: 0 0 0 0;
+	background: @black;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		"image_S5 h1_S5"
+		"image_S5 text_S5"
 }
 
+#a_S5 {
+	display: grid;
+	font-family: @header-font;
+	color: @txtcolor;
+	justify-self: end;
+	margin: 2em 0 6em 0;
+}
+
+#h1_S5 {
+	grid-area: h1_S5;
+	margin-top: 2em;
+}
+
+#text_S5 {
+	display: grid;
+	grid-area: text_S5;
+	margin: 0 6em 0 2em;
+}
+
+#image_S5 {
+	grid-area: image_S5;
+	margin: 0 2em 0 6em;
+}
+
+
 .S6 {
+	display: grid;
+	color: @black;
+	background: #fff;
 	grid-area: S6;
-	margin: 0 6em 0 6em;
+	margin: 0;
+	padding-bottom: 3em;
+	place-items: center center;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		"h1_S6 h1_S6 h1_S6"
+		"div1_S6 div2_S6 div3_S6"
+}
+
+
+
+#h1_S6{
+	margin: 2em 6em 2em 6em;
+	display: grid;
+	grid-area: h1_S6;
+}
+
+#div1_S6 {
+	display: grid;
+	margin-left: 10em;
+	place-items: center center;
+	grid-area: div1_S6;
+}
+
+#div2_S6 {
+	display: grid;
+	place-items: center center;
+	grid-area: div2_S6;
+}
+
+#div3_S6 {
+	display: grid;
+	margin-right: 10em;
+	place-items: center center;
+	grid-area: div3_S6;
+}
+
+.cena_S6 {
+	background: @black;
+	font-family: @text-font;
+	padding: 1em 3em;
+	text-align: center;
+	color: @txtcolor;
+}
+
+.btn_S6 {
+	background: @highlight;
+	font-family: @text-font;
+	margin-top: 1em;
+	padding: 1em 4em;
+	text-align: center;
+	text-transform: uppercase;
+	color: @txtcolor;
+}
+
+.btn_S6:hover {
+	opacity: .8;
+}
+
+.opis_S6 {
+	padding: 2em 0 2em 0;
+	border-top: solid 1px @black;
+	border-bottom: solid 1px @black;
+}
+
+.image_S6 {
+	margin: 0;
+	display: block;
 }
 
 //FOOTER DESKTOP
