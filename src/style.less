@@ -40,11 +40,11 @@ li {
 }
 
 #logobox {
-	margin-left: 6em;
+	margin-left: 20em;
 }
 
 nav {
-	margin-right: 6em;
+	margin-right: 20em;
 	font-family: @text-font;
 
 }
@@ -73,19 +73,20 @@ header {
 	background: @bgcolor;
 	display: grid;
 	grid-template-columns: repeat(auto, 3);
-	grid-template-rows: repeat(auto, 6);
+	grid-template-rows: repeat(auto, 7);
 	grid-template-areas:
 		"S1 S1 S1"
 		"S2 S2 S2"
 		"S3 S3 S3"
 		"S4 S4 S4"
+		"S4a S4a S4a"
 		"S5 S5 S5"
 		"S6 S6 S6"
 }
 
 .S1 {
 	grid-area: S1;
-	margin: 3em 6em 3em 6em;
+	margin: 3em 20em 3em 20em;
 	display: grid;
 	place-items: center center;
 	grid-template-columns: auto auto;
@@ -149,22 +150,23 @@ header {
 }
 
 #h1_S2 {
+	margin: 2em 0 2em 0;
 	grid-area: h1_S2;
 }
 
 #h2_S2 {
 	grid-area: h2_S2;
-	margin: 2em 6em 0 0;
+	margin: 2em 14em 0 0;
 }
 
 #p_S2 {
 	grid-area: p_S2;
-	margin: 0 6em 0 6em;
+	margin: 0 20em 0 20em;
 }
 
 #ikony_S2 {
 	display: grid;
-	margin: 0 6em 0 0;
+	margin: 0 20em 0 0;
 	grid-area: ikony_S2;
 	place-items: start center;
 	grid-template-columns: auto auto auto;
@@ -192,6 +194,10 @@ header {
 	gird-template-rows: auto;
 }
 
+// #image_S3 {
+// 	margin: 0 15em 0 15em;
+// }
+
 .S4 {
 	grid-area: S4;
 	margin: 0 0 0 0;
@@ -207,12 +213,63 @@ header {
 
 #h1_S4 {
 	grid-area: h1_S4;
-	margin: 0 0 0 4em;
+	margin: 0 0 0 8em;
 }
 
 #p_S4 {
 	grid-area: p_S4;
-	margin: 0 6em 0 2em;
+	margin: 0 20em 0 2em;
+}
+
+.S4a {
+	grid-area: S4a;
+	display: grid;
+	place-items: start start;
+	background: bottom / contain no-repeat url('../images/S4a_background.png');
+	margin: 0 20em 0 20em;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(auto, 5);
+	grid-template-areas:
+		"h1_S4a"
+		"S4a_feature1"
+		"S4a_feature2"
+		"S4a_feature3"
+		"S4a_feature4"
+}
+
+#h1_S4a {
+	grid-area: h1_S4a;
+	justify-self: center;
+	margin: 2em 0 2em 0;
+}
+
+#S4a_feature1 {
+	grid-area: S4a_feature1;
+	padding: 2em 2em 2em 2em;
+	background: #111;
+}
+
+#S4a_feature2 {
+	grid-area: S4a_feature2;
+	padding: 2em 2em 2em 2em;
+	background: #111;
+}
+
+#S4a_feature3 {
+	grid-area: S4a_feature3;
+	padding: 2em 2em 2em 2em;
+	background: #111;
+}
+
+#S4a_feature4 {
+	grid-area: S4a_feature4;
+	padding: 2em 2em 2em 2em;
+	background: #111;
+}
+
+.S4a_features {
+	font-family: @text-font;
+	margin-bottom: 6em;
 }
 
 .S5 {
@@ -232,24 +289,25 @@ header {
 	display: grid;
 	font-family: @header-font;
 	color: @txtcolor;
-	justify-self: end;
-	margin: 2em 0 6em 0;
+	float: right;
+	margin: 2em 0 2em 0;
 }
 
 #h1_S5 {
 	grid-area: h1_S5;
-	margin-top: 2em;
+	text-align: center;
+	margin: 2em 0 2em 0;
 }
 
 #text_S5 {
-	display: grid;
+	align-self: end;
 	grid-area: text_S5;
-	margin: 0 6em 0 2em;
+	margin: 0 20em 0 2em;
 }
 
 #image_S5 {
 	grid-area: image_S5;
-	margin: 0 2em 0 6em;
+	margin: 0 2em 0 20em;
 }
 
 
@@ -271,14 +329,14 @@ header {
 
 
 #h1_S6{
-	margin: 2em 6em 2em 6em;
+	margin: 2em 0 2em 0;
 	display: grid;
 	grid-area: h1_S6;
 }
 
 #div1_S6 {
 	display: grid;
-	margin-left: 10em;
+	margin-left: 20em;
 	place-items: center center;
 	grid-area: div1_S6;
 }
@@ -291,7 +349,7 @@ header {
 
 #div3_S6 {
 	display: grid;
-	margin-right: 10em;
+	margin-right: 20em;
 	place-items: center center;
 	grid-area: div3_S6;
 }
@@ -338,8 +396,9 @@ footer {
 }
 
 #footer_container {
-	padding: 3em 6em 0 6em;
+	padding: 3em 20em 0 20em;
 	display: grid;
+	place-items: center center;
 	grid-template-columns: auto auto auto;
 	grid-template-rows: auto auto auto;
 	background: @black;
