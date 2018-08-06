@@ -365,3 +365,370 @@
     grid-area: footer_krakvet;
   }
 }
+@media only screen and (min-width: 1367px) {
+  h1,
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    line-height: 1.3;
+    text-align: justify;
+  }
+  body {
+    margin: 0;
+  }
+  a {
+    color: #f5f5f5;
+    text-decoration: none;
+  }
+  li a:hover {
+    color: #E53935;
+  }
+  li {
+    font-size: 1em;
+    margin-left: 2em;
+    display: inline-block;
+  }
+  #logobox {
+    margin-left: 20em;
+    justify-self: center;
+  }
+  nav {
+    margin-right: 20em;
+    font-family: 'Lato', sans-serif;
+  }
+  .menu {
+    display: grid;
+    place-items: center end;
+  }
+  #logo {
+    height: 5em;
+    padding: 1em 0 1em 0;
+  }
+  header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    background: #111;
+  }
+  .grid-container {
+    color: #f5f5f5;
+    background: #1d1d1b;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    grid-template-rows: repeat(auto, 7);
+    grid-template-areas: "S1 S1 S1" "S2 S2 S2" "S3 S3 S3" "S4 S4 S4" "S4a S4a S4a" "S5 S5 S5" "S6 S6 S6";
+  }
+  .S1 {
+    grid-area: S1;
+    margin: 3em 20em 3em 20em;
+    display: grid;
+    place-items: center center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "image_S1 text_S1" "image_S1 text_S1";
+  }
+  #btn_kup_teraz {
+    padding: 1em 6em;
+    background: #E53935;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    z-index: 10;
+    cursor: pointer;
+    border: none;
+  }
+  #btn_kup_teraz:hover {
+    opacity: 0.8;
+  }
+  #btn_container {
+    margin-top: 3em;
+    display: grid;
+    justify-items: center;
+  }
+  #image_S1 {
+    grid-area: image_S1;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+  }
+  #text_S1 {
+    grid-area: text_S1;
+    margin-left: 3em;
+  }
+  .S2 {
+    grid-area: S2;
+    margin: 0 0 0 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    background: #111 url('../images/piesek_petvita_background.png') no-repeat center center;
+    grid-template-areas: "h1_S2 h1_S2 h1_S2" "p_S2 p_S2 p_S2" "image_S2 ikony_S2 ikony_S2" "image_S2 ikony_S2 ikony_S2";
+  }
+  #image_S2 {
+    margin-top: 6em;
+    grid-area: image_S2;
+  }
+  #h1_S2 {
+    margin: 2em 0 2em 0;
+    grid-area: h1_S2;
+  }
+  #h2_S2 {
+    grid-area: h2_S2;
+    margin: 2em 0 0 0;
+  }
+  #p_S2 {
+    grid-area: p_S2;
+    margin: 0 20em 0 20em;
+  }
+  #ikony_S2 {
+    display: grid;
+    margin: 0 20em 0 0;
+    grid-area: ikony_S2;
+    place-items: start center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "h2_S2 h2_S2 h2_S2" "ikona_S2_1 ikona_S2_2 ikona_S2_3";
+  }
+  #ikona_S2_1 {
+    grid-area: ikona_S2_1;
+  }
+  #ikona_S2_2 {
+    grid-area: ikona_S2_2;
+  }
+  #ikona_S2_3 {
+    grid-area: ikona_S2_3;
+  }
+  .ikona_S2 {
+    justify-items: center;
+    text-align: center;
+    max-width: 12em;
+    padding-bottom: 4em;
+  }
+  .ikona_S2 p {
+    text-align: center;
+  }
+  .S3 {
+    grid-area: S3;
+    margin: 0 0 0 0;
+    display: grid;
+    background: #fff;
+    justify-content: center;
+    grid-template-columns: auto;
+    gird-template-rows: auto;
+  }
+  .S4 {
+    grid-area: S4;
+    padding: 2em 0 2em 0;
+    display: grid;
+    background: #795548;
+    justify-content: start;
+    grid-template-columns: auto;
+    gird-template-rows: auto;
+    grid-template-areas: "h1_S4 p_S4";
+  }
+  #h1_S4 {
+    grid-area: h1_S4;
+    margin: 0 0 0 8em;
+  }
+  #p_S4 {
+    grid-area: p_S4;
+    margin: 0 20em 0 2em;
+  }
+  .S4a {
+    grid-area: S4a;
+    display: grid;
+    place-items: center center;
+    background: bottom / contain no-repeat url('../images/S4a_background.png');
+    margin: 0;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(auto, 5);
+    grid-template-areas: "h1_S4a h1_S4a" "S4a_container S4a_container" "S4a_container S4a_container" "S4a_container S4a_container" "S4a_container S4a_container";
+  }
+  #h1_S4a {
+    grid-area: h1_S4a;
+    justify-self: center;
+    margin: 2em 0 2em 0;
+  }
+  #S4a_feature1 {
+    grid-area: S4a_feature1;
+  }
+  #S4a_feature2 {
+    grid-area: S4a_feature2;
+  }
+  #S4a_feature3 {
+    grid-area: S4a_feature3;
+  }
+  #S4a_feature4 {
+    grid-area: S4a_feature4;
+  }
+  #S4a_feature5 {
+    grid-area: S4a_feature5;
+  }
+  #S4a_feature6 {
+    grid-area: S4a_feature6;
+  }
+  #S4a_feature7 {
+    grid-area: S4a_feature7;
+  }
+  #S4a_feature8 {
+    grid-area: S4a_feature8;
+  }
+  .S4a_features > div {
+    border: 1px solid #353535;
+    -webkit-box-shadow: 0px 3px 25px -4px rgba(17, 1, 0, 0.6);
+    -moz-box-shadow: 0px 3px 25px -4px rgba(17, 1, 0, 0.6);
+    box-shadow: 0px 3px 25px -4px rgba(17, 1, 0, 0.6);
+    padding: 2em 2em 2em 2em;
+    background: #111;
+    margin: 2em 1em 2em 1em;
+    border-radius: 5px;
+  }
+  .S4a_container {
+    grid-area: S4a_container;
+    display: grid;
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(auto, 4);
+    grid-template-areas: "S4a_feature1 S4a_feature5" "S4a_feature2 S4a_feature6" "S4a_feature3 S4a_feature7" "S4a_feature4 S4a_feature8";
+  }
+  .S4a_features {
+    margin: 0 1em 12em 1em;
+  }
+  .S5 {
+    display: grid;
+    place-items: center center;
+    grid-area: S5;
+    margin: 0 0 0 0;
+    background: #111;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "image_S5 h1_S5" "image_S5 text_S5";
+  }
+  #a_S5 {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    color: #f5f5f5;
+    float: right;
+    margin: 2em 0 2em 0;
+  }
+  #h1_S5 {
+    grid-area: h1_S5;
+    text-align: center;
+    margin: 2em 0 2em 0;
+  }
+  #text_S5 {
+    align-self: end;
+    grid-area: text_S5;
+    margin: 0 20em 0 2em;
+  }
+  #image_S5 {
+    grid-area: image_S5;
+    margin: 0 2em 0 20em;
+  }
+  .S6 {
+    display: grid;
+    color: #111;
+    background: #fff;
+    grid-area: S6;
+    padding-bottom: 3em;
+    place-items: center center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "h1_S6 h1_S6 h1_S6" "div1_S6 div2_S6 div3_S6";
+  }
+  #h1_S6 {
+    margin: 2em 10em 2em 10em;
+    display: grid;
+    grid-area: h1_S6;
+  }
+  #div1_S6 {
+    display: grid;
+    margin-left: 15em;
+    place-items: center center;
+    grid-area: div1_S6;
+  }
+  #div2_S6 {
+    display: grid;
+    place-items: center center;
+    margin: 0 1em 0 1em;
+    grid-area: div2_S6;
+  }
+  #div3_S6 {
+    display: grid;
+    margin-right: 15em;
+    place-items: center center;
+    grid-area: div3_S6;
+  }
+  .cena_S6 {
+    background: #111;
+    font-family: 'Lato', sans-serif;
+    padding: 1em 3em;
+    text-align: center;
+    color: #f5f5f5;
+  }
+  .btn_S6 {
+    background: #E53935;
+    font-family: 'Lato', sans-serif;
+    margin-top: 1em;
+    padding: 1em 4em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f5f5f5;
+  }
+  .btn_S6:hover {
+    opacity: 0.8;
+  }
+  .opis_S6 {
+    padding: 2em 0 2em 0;
+    border-top: solid 1px #111;
+    border-bottom: solid 1px #111;
+  }
+  .image_S6 {
+    margin: 0;
+    display: block;
+  }
+  footer {
+    font-family: 'Lato', sans-serif;
+    color: #f5f5f5;
+  }
+  #footer_container {
+    padding: 3em 20em 0 20em;
+    display: grid;
+    place-items: start center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background: #111;
+    grid-template-areas: "footer_icons footer_text footer_krakvet" "footer_icons footer_text footer_krakvet" "footer_podpis footer_podpis footer_podpis";
+  }
+  #footer_podpis {
+    grid-area: footer_podpis;
+    text-align: center;
+    margin: 2em 0 2em 0;
+  }
+  #footer_podpis a:hover {
+    opacity: 0.6;
+  }
+  #footer_krakvet a:hover {
+    opacity: 0.6;
+  }
+  #footer_icons {
+    grid-area: footer_icons;
+    align-self: center;
+  }
+  #footer_text {
+    grid-area: footer_text;
+    margin: 0 2em 0 2em;
+  }
+  #footer_krakvet {
+    display: grid;
+    place-items: center center;
+    grid-area: footer_krakvet;
+  }
+}
