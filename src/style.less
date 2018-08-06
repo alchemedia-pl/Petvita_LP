@@ -1521,24 +1521,25 @@
 	}
 
 	li {
+		display: none;
 		font-size: 1em;
 		margin-left: 2em;
 		display: inline-block;
 	}
 
 	#logobox {
-		margin-left: 2em;
 		justify-self: center;
+		margin: 0;
 	}
 
 	nav {
+		display: none;
 		margin-right: 2em;
 		font-family: @text-font;
-
 	}
 
 	.menu {
-		display: grid;
+		display: none;
 		place-items: center end;
 	}
 
@@ -1549,7 +1550,8 @@
 
 	header {
 		display: grid;
-		grid-template-columns: auto auto;
+		place-items: center center;
+		grid-template-columns: auto;
 		grid-template-rows: auto;
 		background: @black;
 	}
