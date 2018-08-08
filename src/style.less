@@ -1,5 +1,5 @@
 // COLORS
-@bgcolor: #1d1d1b;
+@bgcolor: #fff;
 @txtcolor: #f5f5f5;
 @highlight: #E53935;
 @black: #111;
@@ -11,15 +11,44 @@
 		text-align: center;
 	}
 
+.S1 p {
+	color: @black;
+}
 
-///Media Queries Medium Desktop (<1366px)
-///Media Queries Medium Desktop (<1366px)
-///Media Queries Medium Desktop (<1366px)
+.S1 h1 {
+	color: @black;
+}
 
-@media only screen and (max-width: 1366px)
-{
-	
-	//MISCELLANEOUS
+.S1 h2 {
+	color: @black;
+}
+
+.S4a p {
+	color: @black;
+}
+
+.S4a h1 {
+	color: @black;
+}
+
+
+
+
+
+
+
+///Media Queries Large Desktop (>1367px)
+///Media Queries Large Desktop (>1367px)
+///Media Queries Large Desktop (>1367px)
+
+
+
+
+
+
+
+@media only screen and (min-width: 1367px) {
+		//MISCELLANEOUS
 	h1, h2 {
 		font-family: @header-font;
 		text-align: center;
@@ -52,12 +81,12 @@
 	}
 
 	#logobox {
-		margin-left: 10em;
+		margin-left: 25em;
 		justify-self: center;
 	}
 
 	nav {
-		margin-right: 10em;
+		margin-right: 25em;
 		font-family: @text-font;
 
 	}
@@ -99,14 +128,14 @@
 
 	.S1 {
 		grid-area: S1;
-		margin: 3em 10em 3em 10em;
+		margin: 3em 25em 3em 25em;
 		display: grid;
 		place-items: center center;
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
 		grid-template-areas:
-		"image_S1 text_S1"
-		"image_S1 text_S1"
+		"text_S1 image_S1"
+		"text_S1 image_S1"
 	}
 
 	#btn_kup_teraz {
@@ -136,12 +165,12 @@
 		grid-area: image_S1;
 		align-self: center;
 		justify-self: center;
-		width: 70%;
+		width: 100%;
 	}
 
 	#text_S1 {
 		grid-area: text_S1;
-		margin-left: 1em;
+		margin-right: 3em;
 	}
 
 	.S2 {
@@ -175,12 +204,12 @@
 
 	#p_S2 {
 		grid-area: p_S2;
-		margin: 0 10em 0 10em;
+		margin: 0 25em 0 25em;
 	}
 
 	#ikony_S2 {
 		display: grid;
-		margin: 0 10em 0 0;
+		margin: 0 25em 0 0;
 		grid-area: ikony_S2;
 		place-items: start center;
 		grid-template-columns: auto auto auto;
@@ -237,14 +266,14 @@
 
 	#h1_S4 {
 		grid-area: h1_S4;
+		margin: 0 0 0 10em;
 		writing-mode: vertical-rl; 
 		text-orientation: sideways;
-		margin: 0 0 0 5em;
 	}
 
 	#p_S4 {
 		grid-area: p_S4;
-		margin: 0 10em 0 2em;
+		margin: 0 25em 0 2em;
 	}
 
 	.S4a {
@@ -252,7 +281,7 @@
 		display: grid;
 		place-items: center center;
 		background: bottom / contain no-repeat url('../images/S4a_background.png');
-		margin: 0 0 0 0;
+		margin: 0;
 		grid-template-columns: auto auto;
 		grid-template-rows: repeat(auto, 5);
 		grid-template-areas:
@@ -360,12 +389,12 @@
 	#text_S5 {
 		align-self: end;
 		grid-area: text_S5;
-		margin: 0 10em 0 2em;
+		margin: 0 25em 0 2em;
 	}
 
 	#image_S5 {
 		grid-area: image_S5;
-		margin: 0 2em 0 10em;
+		margin: 0 2em 0 25em;
 	}
 
 	.S6 {
@@ -390,7 +419,7 @@
 
 	#div1_S6 {
 		display: grid;
-		margin-left: 10em;
+		margin-left: 25em;
 		place-items: center center;
 		grid-area: div1_S6;
 	}
@@ -404,7 +433,7 @@
 
 	#div3_S6 {
 		display: grid;
-		margin-right: 10em;
+		margin-right: 25em;
 		place-items: center center;
 		grid-area: div3_S6;
 	}
@@ -451,15 +480,16 @@
 	}
 
 	#footer_container {
-		padding: 3em 10em 0 10em;
+		padding: 3em 25em 0 25em;
 		display: grid;
-		place-items: start center;
+		place-items: center center;
 		grid-template-columns: auto auto auto;
-		grid-template-rows: auto auto auto;
+		grid-template-rows: auto auto auto auto;
 		background: @black;
 		grid-template-areas: 
-		"footer_icons footer_text footer_krakvet"
-		"footer_icons footer_text footer_krakvet"
+		"footer_text footer_text footer_krakvet"
+		"footer_text footer_text footer_krakvet"
+		"footer_icons footer_icons footer_icons"
 		"footer_podpis footer_podpis footer_podpis";
 	}
 
@@ -500,17 +530,20 @@
 
 
 
-///Media Queries Large Desktop (>1367px)
-///Media Queries Large Desktop (>1367px)
-///Media Queries Large Desktop (>1367px)
+///Media Queries Medium Desktop (<1366px)
+///Media Queries Medium Desktop (<1366px)
+///Media Queries Medium Desktop (<1366px)
 
 
 
 
 
 
-@media only screen and (min-width: 1367px) {
-		//MISCELLANEOUS
+
+@media only screen and (max-width: 1366px)
+{
+	
+	//MISCELLANEOUS
 	h1, h2 {
 		font-family: @header-font;
 		text-align: center;
@@ -590,14 +623,14 @@
 
 	.S1 {
 		grid-area: S1;
-		margin: 3em 20em 3em 20em;
+		margin: 2em 20em 2em 20em;
 		display: grid;
 		place-items: center center;
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
 		grid-template-areas:
-		"image_S1 text_S1"
-		"image_S1 text_S1"
+		"text_S1 image_S1"
+		"text_S1 image_S1"
 	}
 
 	#btn_kup_teraz {
@@ -627,13 +660,14 @@
 		grid-area: image_S1;
 		align-self: center;
 		justify-self: center;
-		width: 100%;
+		width: 90%;
 	}
 
 	#text_S1 {
 		grid-area: text_S1;
-		margin-left: 3em;
+		margin-right: 1em;
 	}
+
 
 	.S2 {
 		grid-area: S2;
@@ -728,9 +762,9 @@
 
 	#h1_S4 {
 		grid-area: h1_S4;
-		margin: 0 0 0 8em;
 		writing-mode: vertical-rl; 
 		text-orientation: sideways;
+		margin: 0 0 0 9em;
 	}
 
 	#p_S4 {
@@ -743,7 +777,7 @@
 		display: grid;
 		place-items: center center;
 		background: bottom / contain no-repeat url('../images/S4a_background.png');
-		margin: 0;
+		margin: 0 0 0 0;
 		grid-template-columns: auto auto;
 		grid-template-rows: repeat(auto, 5);
 		grid-template-areas:
@@ -757,7 +791,7 @@
 	#h1_S4a {
 		grid-area: h1_S4a;
 		justify-self: center;
-		margin: 2em 0 2em 0;
+		margin: 1em 0 1em 0;
 	}
 
 	#S4a_feature1 {
@@ -881,7 +915,7 @@
 
 	#div1_S6 {
 		display: grid;
-		margin-left: 15em;
+		margin-left: 20em;
 		place-items: center center;
 		grid-area: div1_S6;
 	}
@@ -889,13 +923,13 @@
 	#div2_S6 {
 		display: grid;
 		place-items: center center;
-		margin: 0 1em 0 1em;
+		margin: 0 3em 0 3em;
 		grid-area: div2_S6;
 	}
 
 	#div3_S6 {
 		display: grid;
-		margin-right: 15em;
+		margin-right: 20em;
 		place-items: center center;
 		grid-area: div3_S6;
 	}
@@ -944,13 +978,14 @@
 	#footer_container {
 		padding: 3em 20em 0 20em;
 		display: grid;
-		place-items: start center;
+		place-items: center center;
 		grid-template-columns: auto auto auto;
-		grid-template-rows: auto auto auto;
+		grid-template-rows: auto auto auto auto;
 		background: @black;
 		grid-template-areas: 
-		"footer_icons footer_text footer_krakvet"
-		"footer_icons footer_text footer_krakvet"
+		"footer_text footer_text footer_krakvet"
+		"footer_text footer_text footer_krakvet"
+		"footer_icons footer_icons footer_icons"
 		"footer_podpis footer_podpis footer_podpis";
 	}
 
@@ -1090,8 +1125,8 @@
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
 		grid-template-areas:
-		"image_S1 text_S1"
-		"image_S1 text_S1"
+		"text_S1 image_S1"
+		"text_S1 image_S1"
 	}
 
 	#btn_kup_teraz {
@@ -1126,8 +1161,9 @@
 
 	#text_S1 {
 		grid-area: text_S1;
-		margin-left: 1em;
+		margin-right: 1em;
 	}
+
 
 	.S2 {
 		grid-area: S2;
@@ -1442,11 +1478,12 @@
 		display: grid;
 		place-items: start center;
 		grid-template-columns: auto auto auto;
-		grid-template-rows: auto auto auto;
+		grid-template-rows: auto auto auto auto;
 		background: @black;
 		grid-template-areas: 
-		"footer_icons footer_text footer_krakvet"
-		"footer_icons footer_text footer_krakvet"
+		"footer_text footer_text footer_krakvet"
+		"footer_text footer_text footer_krakvet"
+		"footer_icons footer_icons footer_icons"
 		"footer_podpis footer_podpis footer_podpis";
 	}
 
@@ -1588,8 +1625,8 @@
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
 		grid-template-areas:
-		"image_S1 text_S1"
-		"image_S1 text_S1"
+		"text_S1 image_S1"
+		"text_S1 image_S1"
 	}
 
 	#btn_kup_teraz {
@@ -1624,8 +1661,9 @@
 
 	#text_S1 {
 		grid-area: text_S1;
-		margin-left: 1em;
+		margin-right: 1em;
 	}
+
 
 	.S2 {
 		grid-area: S2;
@@ -1945,11 +1983,12 @@
 		display: grid;
 		place-items: start center;
 		grid-template-columns: auto auto auto;
-		grid-template-rows: auto auto auto;
+		grid-template-rows: auto auto auto auto;
 		background: @black;
 		grid-template-areas: 
-		"footer_icons footer_text footer_krakvet"
-		"footer_icons footer_text footer_krakvet"
+		"footer_text footer_text footer_krakvet"
+		"footer_text footer_text footer_krakvet"
+		"footer_icons footer_icons footer_icons"
 		"footer_podpis footer_podpis footer_podpis";
 	}
 
@@ -2473,11 +2512,12 @@
 		display: grid;
 		place-items: center center;
 		grid-template-columns: auto auto auto;
-		grid-template-rows: auto auto auto;
+		grid-template-rows: auto auto auto auto;
 		background: @black;
 		grid-template-areas: 
-		"footer_icons footer_text footer_krakvet"
-		"footer_icons footer_text footer_krakvet"
+		"footer_text footer_text footer_krakvet"
+		"footer_text footer_text footer_krakvet"
+		"footer_icons footer_icons footer_icons"
 		"footer_podpis footer_podpis footer_podpis";
 	}
 
