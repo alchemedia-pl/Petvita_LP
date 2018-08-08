@@ -49,7 +49,7 @@
   }
   li {
     font-size: 1em;
-    margin-left: 2em;
+    margin-left: 1.25em;
     display: inline-block;
   }
   #logobox {
@@ -466,8 +466,8 @@
     color: #E53935;
   }
   li {
-    font-size: 1em;
-    margin-left: 2em;
+    font-size: 0.9em;
+    margin-left: 1em;
     display: inline-block;
   }
   #logobox {
@@ -1306,7 +1306,7 @@
   li {
     display: none;
     font-size: 1em;
-    margin-left: 2em;
+    margin-left: 1em;
     display: inline-block;
   }
   #logobox {
@@ -1529,9 +1529,9 @@
     background: #111;
     padding: 2em 3em 2em 3em;
     color: #fff;
-    grid-template-columns: repeat(auto, 3);
-    grid-template-rows: auto auto;
-    grid-template-areas: "h1_S5 h1_S5 h1_S5" "div_S5_1 div_S5_2 div_S5_3";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "h1_S5" "div_S5_1" "div_S5_2" "div_S5_3";
   }
   .S5 a {
     font-family: 'Montserrat', sans-serif;
@@ -1544,8 +1544,8 @@
   #div_S5_1 {
     grid-area: div_S5_1;
     display: grid;
-    padding: 0 2em 0 0;
-    border-right: 1px solid #616161;
+    border: 0px solid black;
+    padding: 2em 0 2em 0;
     place-items: center center;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -1553,7 +1553,7 @@
   }
   #image_S5_1 {
     grid-area: image_S5_1;
-    width: 60%;
+    width: 30%;
   }
   #p_S5_1 {
     grid-area: p_S5_1;
@@ -1565,7 +1565,7 @@
   #div_S5_2 {
     grid-area: div_S5_2;
     display: grid;
-    margin: 0 2em 0 2em;
+    margin: 2em 0 2em 0;
     place-items: center center;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -1573,7 +1573,7 @@
   }
   #image_S5_2 {
     grid-area: image_S5_2;
-    width: 60%;
+    width: 30%;
   }
   #p_S5_2 {
     grid-area: p_S5_2;
@@ -1585,8 +1585,8 @@
   #div_S5_3 {
     grid-area: div_S5_3;
     display: grid;
-    padding: 0 0 0 2em;
-    border-left: 1px solid #616161;
+    padding: 2em 0 2em 0;
+    border: 0px solid black;
     place-items: center center;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -1594,7 +1594,7 @@
   }
   #image_S5_3 {
     grid-area: image_S5_3;
-    width: 60%;
+    width: 30%;
   }
   #p_S5_3 {
     grid-area: p_S5_3;
@@ -1965,9 +1965,9 @@
     background: #111;
     padding: 2em 3em 2em 3em;
     color: #fff;
-    grid-template-columns: repeat(auto, 3);
-    grid-template-rows: auto auto;
-    grid-template-areas: "h1_S5 h1_S5 h1_S5" "div_S5_1 div_S5_2 div_S5_3";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "h1_S5" "div_S5_1" "div_S5_2" "div_S5_3";
   }
   .S5 a {
     font-family: 'Montserrat', sans-serif;
@@ -1975,13 +1975,13 @@
   #h1_S5 {
     grid-area: h1_S5;
     text-align: center;
-    margin: 0 0 2em 0;
+    margin: 0 0 0 0;
   }
   #div_S5_1 {
     grid-area: div_S5_1;
     display: grid;
-    padding: 0 2em 0 0;
-    border-right: 1px solid #616161;
+    border: 0px solid black;
+    padding: 2em 0 2em 0;
     place-items: center center;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -1989,7 +1989,7 @@
   }
   #image_S5_1 {
     grid-area: image_S5_1;
-    width: 60%;
+    width: 30%;
   }
   #p_S5_1 {
     grid-area: p_S5_1;
@@ -2001,7 +2001,7 @@
   #div_S5_2 {
     grid-area: div_S5_2;
     display: grid;
-    margin: 0 2em 0 2em;
+    margin: 2em 0 2em 0;
     place-items: center center;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -2009,7 +2009,7 @@
   }
   #image_S5_2 {
     grid-area: image_S5_2;
-    width: 60%;
+    width: 30%;
   }
   #p_S5_2 {
     grid-area: p_S5_2;
@@ -2021,8 +2021,8 @@
   #div_S5_3 {
     grid-area: div_S5_3;
     display: grid;
-    padding: 0 0 0 2em;
-    border-left: 1px solid #616161;
+    padding: 2em 0 2em 0;
+    border: 0px solid black;
     place-items: center center;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -2030,7 +2030,7 @@
   }
   #image_S5_3 {
     grid-area: image_S5_3;
-    width: 60%;
+    width: 30%;
   }
   #p_S5_3 {
     grid-area: p_S5_3;
